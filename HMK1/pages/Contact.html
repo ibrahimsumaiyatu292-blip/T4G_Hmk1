@@ -20,35 +20,80 @@
 
 
 <h2>Get in Touch🤙🏾</h2>
-<p>If you have any questions, feel free to reach out to us through the following contact details:</p>
-<label for="firstname">First name:</i><i class="fa-solid fa-circle-user"></i></label>
-<input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
 
 <form>
-    <label for="firstname">First name:</label>
-    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
-    <br><br>
+   <label for="firstname">First name: </label>
+        <input 
+            type="text" 
+            id="firstname" 
+            name="firstname" 
+            autocomplete="given-name"
+            pattern="[A-Za-z]+"
+            title="Letters only - no numbers allowed"
+            list="firstnamelist"
+            required
+        >
+        <datalist id="firstnamelist">
+            <option value="">
+        </datalist>
+        <br><br>
 
-    <label for="lastname">Last name:</label>
-    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
-    <br><br>
+        <label for="lastname">Last name: </label>
+        <input 
+            type="text" 
+            id="lastname" 
+            name="lastname" 
+            autocomplete="family-name"
+            pattern="[A-Za-z]+"
+            title="Letters only - no numbers allowed"
+            list="lastnamelist"
+            required
+        >
+        <datalist id="lastnamelist">
+            <option value="">
+        </datalist>
+        <br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    <br><br>
+        <label for="email">Email: </label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            autocomplete="email"
+            title="Please enter a valid email address"
+            required
+        >
+        <br><br>
 
-    <label for="telephone">Telephone:</label>
-    <input type="tel" id="telephone" name="telephone">
-    <br><br>
+        <label for="telephone">Telephone: </label>
+        <input 
+            type="tel" 
+            id="telephone" 
+            name="telephone" 
+            autocomplete="tel"
+            pattern="[0-9+\-\s]+"
+            title="Please enter a valid phone number"
+            required
+        >
+        <br><br>
 
-    <textarea id="message" name="message" rows="6" cols="35" placeholder="Please type your message here"></textarea>
-    <br><br>
+        <label for="message"></label><br>
+        <textarea 
+            id="message" 
+            name="message" 
+            rows="10" 
+            cols="40" 
+            placeholder="Please type your message here"
+            required
+        ></textarea>
+        <br><br>
 
-    <button type="submit">Send Message</button>
-</form>
+        <button type="submit">Send Message</button>
 
-
- <ul>
+    </form>
+       <br>
+       <p>If you have any questions, feel free to reach out to us through the following contact details:</p>
+    <ul>
     <li>
      <p>
         Email me:
@@ -61,8 +106,12 @@
     <p>
         Phone:
         <a href="tel:+233537479080">
-            +233 53 747 9080<br><br>
+            +233 53 747 9080
         </a>
+    </p>
+    </li>
+</ul>
+
 
 <i class="fa-regular fa-copyright"></i>2024 Our Website <br><br>
 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
